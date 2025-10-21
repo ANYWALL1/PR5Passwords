@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="44ff5afb039641aa8b105fe5abf91ec3" Name="Diagram1">
+        <EntityTypeShape EntityType="FurnitureCenterDBModel.Clients" Width="1.5" PointX="6" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureCenterDBModel.Employees" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureCenterDBModel.MaterialCategories" Width="1.5" PointX="6" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureCenterDBModel.Materials" Width="1.5" PointX="8.25" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureCenterDBModel.OrderAssignments" Width="1.5" PointX="5.25" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureCenterDBModel.OrderItems" Width="1.5" PointX="10.5" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureCenterDBModel.Orders" Width="1.5" PointX="8.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureCenterDBModel.OrderStatuses" Width="1.5" PointX="6" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureCenterDBModel.Payments" Width="1.5" PointX="10.5" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureCenterDBModel.Positions" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureCenterDBModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureCenterDBModel.Users" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="FurnitureCenterDBModel.FK__Orders__ClientID__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="FurnitureCenterDBModel.FK__Employees__Posit__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="FurnitureCenterDBModel.FK__OrderAssi__Emplo__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="FurnitureCenterDBModel.FK__Orders__ManagerI__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="FurnitureCenterDBModel.FK__Materials__Categ__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="FurnitureCenterDBModel.FK__OrderItem__Mater__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="FurnitureCenterDBModel.FK__OrderAssi__Order__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="FurnitureCenterDBModel.FK__OrderItem__Order__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="FurnitureCenterDBModel.FK__Orders__StatusID__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="FurnitureCenterDBModel.FK__Payments__OrderI__59063A47" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

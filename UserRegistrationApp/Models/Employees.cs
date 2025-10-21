@@ -17,15 +17,24 @@ namespace UserRegistrationApp.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Employees()
         {
-            this.Requests = new HashSet<Requests>();
+            this.OrderAssignments = new HashSet<OrderAssignments>();
+            this.Orders = new HashSet<Orders>();
         }
     
         public int EmployeeID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string Position { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Email { get; set; }
+        public int PositionID { get; set; }
+        public System.DateTime HireDate { get; set; }
+        public Nullable<System.DateTime> DismissalDate { get; set; }
+        public Nullable<bool> IsActive { get; set; }
     
+        public virtual Positions Positions { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Requests> Requests { get; set; }
+        public virtual ICollection<OrderAssignments> OrderAssignments { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Orders> Orders { get; set; }
     }
 }

@@ -31,7 +31,7 @@ namespace UserRegistrationApp
             try
             {
                 // Создаем экземпляр нашего контекста базы данных
-                using (var dbContext = new Entities())
+                using (var dbContext = new FurnitureCenterDBEntities())
                 {
                     // Создаем новый объект пользователя
                     Users newUser = new Users

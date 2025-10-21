@@ -52,59 +52,68 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Contracts.cs">
-      <DependentUpon>TelecomModel.tt</DependentUpon>
+    <Compile Include="Models\Clients.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Employees.cs">
-      <DependentUpon>TelecomModel.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Requests.cs">
-      <DependentUpon>TelecomModel.tt</DependentUpon>
+    <Compile Include="Models\MaterialCategories.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Services.cs">
-      <DependentUpon>TelecomModel.tt</DependentUpon>
+    <Compile Include="Models\Materials.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Subscribers.cs">
-      <DependentUpon>TelecomModel.tt</DependentUpon>
+    <Compile Include="Models\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OrderAssignments.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OrderItems.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Orders.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OrderStatuses.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Payments.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Positions.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sysdiagrams.cs">
-      <DependentUpon>TelecomModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Tariffs.cs">
-      <DependentUpon>TelecomModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TelecomModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TelecomModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TelecomModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TelecomModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TelecomModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TelecomModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Transactions.cs">
-      <DependentUpon>TelecomModel.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Users.cs">
-      <DependentUpon>TelecomModel.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="Models\TelecomModel.edmx">
+    <EntityDeploy Include="Models\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>TelecomModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Models\TelecomModel.edmx.diagram">
-      <DependentUpon>TelecomModel.edmx</DependentUpon>
+    <None Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
@@ -115,19 +124,19 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Models\TelecomModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>TelecomModel.Context.cs</LastGenOutput>
-      <DependentUpon>TelecomModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="Models\TelecomModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TelecomModel.edmx</DependentUpon>
-      <LastGenOutput>TelecomModel.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Content Include="Models\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
